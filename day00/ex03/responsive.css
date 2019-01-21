@@ -1,0 +1,75 @@
+	h1 {
+		text-align:center;
+		color:white;
+		font-family:fantasy;
+	}
+	.aligncenter {
+		text-align:center;
+	}
+	.purple{
+		background:#B0A7F1;
+		text-align:center;
+	}
+	.blue{
+		background:#99C7FF;
+		text-align:center;
+	}
+	.red{
+		background:#FFA8D3;
+		text-align:center;
+	}
+	.yellow{
+		background:#FFE699;
+		text-align:center;
+	}
+	.orange{
+		background:#FFC848;
+		text-align:center;
+	}
+	.bright-blue{
+		background:#75ECFD;
+		text-align:center;
+	}
+	.halogen{
+		background:#E1E1FF;
+		text-align:center;
+	}
+	.green{
+		background:#A4F0B7;
+		text-align:center;
+	}
+	.lemon{
+		background:#FFFF99;
+		text-align:center;
+	}
+	.brown{
+		background:#D69E87;
+		text-align:center;
+		margin:1px;
+	}
+	.number{
+		text-align: left;
+		margin:1px;
+		-webkit-user-modify: read-write;
+		font-size: 2vw;
+	}
+	.weight{
+		text-align:right;
+		margin:1px;
+		-webkit-user-modify: read-write;
+		font-size: 2vw;
+	}
+ 	h2 {
+		font-size: 2vw;
+		font-weight:bold;
+		-webkit-user-modify: read-write;
+	}
+	.center {
+    	margin-left:auto;
+    	margin-right:auto;
+		width:80%;
+  	}
+	.beige{
+		background:#c29c9b;
+		text-align:center;
+	}
