@@ -1,0 +1,77 @@
+<html>
+<head>
+	<title> TO-DO</title>
+	<style>
+	body{
+		background-image: linear-gradient(to bottom, #FFB6C1, #c0aee0);
+	}
+	h1{
+		text-align: center;
+		color: white;
+		margin-top: 50px;
+	}
+	.center{
+		width: 250;
+		height: 250;
+		display: block;
+  		margin-left: auto;
+  		margin-right: auto;
+		margin-bottom: 77px;
+	}
+	.header {
+  		background-color: #B0E0E6;
+  		padding: 30px 40px;
+  		color: white;
+  		text-align: center;
+		margin-left: 200px;
+		margin-right: 200px;
+	}
+
+	.addBtn {
+  		padding: 10px;
+  		width: 25%;
+  		background: #d9d9d9;
+  		color: #555;
+  		float: center;
+  		text-align: center;
+  		font-size: 16px;
+  		cursor: pointer;
+	}
+	.addBtn:hover {
+  		background-color: #bbb;
+	}
+	h2{
+		margin-top: 5px;
+	}
+	.item{
+  		cursor: pointer;
+  		position: relative;
+  		padding: 12px 8px 12px 40px;
+  		background: #eee;
+  		font-size: 18px;
+  		transition: 0.2s;
+		margin-left: 200px;
+		margin-right: 200px;
+	}
+	ul li:nth-child(odd) {
+  		background: #f9f9f9;
+	}
+	</style>
+</head>
+	<body onload="refresh('text')">
+		<div>
+		<h1> TO-DO or not to do...?</h1>
+		<img src = "http://cdn.shopify.com/s/files/1/1061/1924/products/Thinking_Face_Emoji_grande.png?v=1480481060" class="center">
+		<div id = "ft_list">
+			<div class = "header">
+				<h2> My To Do List </h2>
+				<button onclick= "toDo()" class="addBtn" id = "butt">New</button>
+			</div>
+		<div class = "item" id = "item">
+
+		</div>
+	</div>
+	<script src="todo.js"></script>
+
+	</body>
+</html>

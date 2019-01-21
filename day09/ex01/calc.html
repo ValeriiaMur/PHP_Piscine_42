@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<style>
+		html {
+	  		box-sizing: border-box;
+		}
+		body {
+	  		align-items: center;
+	  		background-image: linear-gradient(236deg, #74ebd5, #d09cd9);
+	  		display: flex;
+	  		height: 100vh;
+	  		justify-content: center;
+		}
+		#calculator {
+			margin: auto;
+		}
+		h1{
+			text-align:center;
+		}
+		.try{
+			background-image: linear-gradient(to bottom, #FFB6C1, #c0aee0);
+			border-style: solid;
+			border-color: black;
+		}
+		p{
+			text-align: center;
+		}
+	</style>
+	<script>
+		function message(string) {
+			console.log(string);
+			alert(string);
+		}
+		function operation(operator) {
+			switch (operator) {
+				case "+": return(value_1 + value_2);
+				case "-": return(value_1 - value_2);
+				case "*": return(value_1 * value_2);
+				case "/": return (value_2 != 0) ? (value_1 / value_2) : ("It’s over 9000!");
+				case "%": return (value_2 != 0) ? (value_1 % value_2) : ("It’s over 9000!");
+			}
+		}
+		function use_me()
+		{
+			alert("Please, use me...");
+		}
+		setInterval(use_me, 30000);
+    function isNumeric(n) {
+        return !isNaN(n)
+      }
+		document.addEventListener('DOMContentLoaded', function() {
+			operator = document.getElementById('operator').options;
+			input_1 = document.getElementById('value_1');
+			input_2 = document.getElementById('value_2');
+			setTimeout(use_me, 30000);
+			document.getElementById('run').addEventListener('click', function() {
+        if ( isNumeric(input_1.value) && isNumeric(input_2.value) ) {
+          value_1 = parseInt(input_1.value, 10);
+          value_2 = parseInt(input_2.value, 10);
+          if (!(value_1 >= 0) || !(value_2 >= 0))
+            message("Error :(");
+          else
+            message(operation(operator[operator.selectedIndex].value));
+        }
+        else {
+          message("Error :( Please, chek your input!");
+        }
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="calculator">
+		<h1> Use me! </h1>
+		<p> Both inputs fields can only contain positive integer values :) </p>
+		<input type="text" id="value_1"/>
+		<select id="operator">
+			<option value="+">+</option>
+			<option value="-">-</option>
+			<option value="*">*</option>
+			<option value="/">/</option>
+			<option value="%">%</option>
+		</select>
+		<input type="text" id="value_2"/>
+		<input type="submit" value="Try me!" id="run" class = "try"/>
+	</div>
+</body>
+
+</html>
