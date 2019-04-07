@@ -1,2 +1,3 @@
 # PHP_Piscine_42
-A two-week bootcamp on PHP, SQL, JS, HTML, CSS
+
+PHP, mySQL, JS, HTML, CSS and other cool web development stuff.
