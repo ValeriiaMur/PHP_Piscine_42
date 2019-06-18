@@ -1,5 +1,3 @@
-USE db_vmuradia;
-
 CREATE TABLE ft_table(
 	id INT NOT NULL AUTO_INCREMENT,
 	login VARCHAR(8) NOT NULL DEFAULT 'toto',
